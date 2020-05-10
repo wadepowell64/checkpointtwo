@@ -1,0 +1,33 @@
+body{
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/488a08fe-d05b-46e9-baa1-9533867671d5/d1r050o-85109555-0299-4038-b73d-f2bc7d2cc155.jpg/v1/fill/w_600,h_784,q_75,strp/crumpled_looseleaf_paper_by_cliffski_d1r050o-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD03ODQiLCJwYXRoIjoiXC9mXC80ODhhMDhmZS1kMDViLTQ2ZTktYmFhMS05NTMzODY3NjcxZDVcL2QxcjA1MG8tODUxMDk1NTUtMDI5OS00MDM4LWI3M2QtZjJiYzdkMmNjMTU1LmpwZyIsIndpZHRoIjoiPD02MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.YUwJoWIOFH_GjAomvDTcAV-KBqJYzEKaOVdOVjvENs8);
+    background-color: #ff0000;
+    height: max-content;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+header, main{
+  font-family: 'Indie Flower', cursive;
+}
+
+footer{
+  font-family: 'Quicksand', sans-serif;
+}
+
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.intro{
+margin-left: 1em;
+}

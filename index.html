@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top scrolling-navbar d-flex justify-content-center text-secondary">
+      <a class="navbar-brand" href="#">
+        <h1>Mutant Cheeseburger Eater</h1>
+      </a>
+      <div id="navbarNav">
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+  <main>
+
+    <div class="container-fluid pt-3">
+      <div id="choices" class="row text-secondary pt-5">
+
+        <div class="col-4">
+          <span><b>Burgers Eaten: </b><span id="burgerseaten"></span></span></a>
+        </div>
+
+        <div class="col-2 col-sm-0 col-xs-0">
+          <span><b>Mouths: </b><span id="mouths"></span></span></a>
+        </div>
+
+        <div class="col-2 col-sm-0 col-xs-0">
+          <span><b>Limbs: </b><span id="limbs">1</span></span></a>
+        </div>
+
+        <div class="col-2 col-sm-0 col-xs-0">
+          <span><b>Heads: </b><span id="heads"></span></span></a>
+        </div>
+
+        <div class="col-2 col-sm-0 col-xs-0">
+          <span><b>Stomachs: </b><span id="stomachs"></span></span></a>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="container-fluid pt-3 d-flex justify-content-center">
+      <div id="choices" class="row text-secondary pt-5">
+
+
+
+        <div id="intro" class="col-4 d-flex justify-content-center align-self-center">
+          <p>Suave, debonair, and handsome biologist <b>Wade Powell</b> has gone rogue and released you, a mutant burger
+            eating
+            super monster! You automatically gain one burger per second. Click the burger to eat, and use burgers eaten
+            to grow new limbs, mouths, heads, and stomachs
+            to push you further toward your only goal.... <b>EATING EVERY CHEESEBURGER IN THE KNOWN UNIVERSE!</b></p>
+        </div>
+        <div class="col-4 d-flex justify-content-center align-self-center ">
+
+          <img id="cheeseburger" class="rotate" src="cheeseburger.png" alt="cheeseburger" width="500rem" height="250rem"
+            onclick="eat()">
+        </div>
+        <div class="col-4 d-flex justify-content-center">
+
+          <div class="card d-flex justify-content-center bg-light" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-titled-flex justify-content-center ">
+                <p>
+                  <b>
+                    <div id="timer"></div>
+                  </b>
+                </p>
+              </h5>
+              <p class="card-text d-flex justify-content-center">
+              <p><b>Eat as many burgers as you can before time runs out!</b></p>
+              </p>
+              <a onclick="moreTime()" href="#" class="btn btn-secondary d-flex justify-content-center">Buy more time</a>
+              <audio id="no" src="no.mp3"></audio>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+  </main>
+  <footer>
+
+    <div class="container-fluid d-flex justify-content-center">
+      <div id="choices" class="row text-light pt-5 d-flex justify-content-center">
+
+        <div class="col-3 d-flex justify-content-center">
+          <button onclick="buyMouth()" id="mouth" type="button" class="btn btn-secondary btn-sm"><small><b>Buy
+                Another
+                Mouth</b> (Adds +1 burger eaten per click and autoclick) Price doubles on purchase</small></button>
+          <audio id="likethat" src="likethat.mp3"></audio>
+        </div>
+        <div class="col-3 d-flex justify-content-center">
+          <button onclick="buyLimb()" id="limb" type="button" class="btn btn-secondary btn-sm"><small><b>Buy Another
+                Limb</b> (Multiplies burgers eaten by limbs every ten seconds) Price quadruples on
+              purchase</small></button>
+          <audio id="awwwyis" src="awwwyis.mp3"></audio>
+        </div>
+        <div class="col-3 d-flex justify-content-center">
+          <button onclick="buyHead()" id="head" type="button" class="btn btn-secondary btn-sm"><small><b>Buy Another
+                Head</b> (Increases burgers eaten on click by double the amount of heads purchased, and adds (heads x 2)
+              to
+              every
+              limb iteration) Price triples on
+              purchase</small></button>
+          <audio id="reallytasty" src="reallytasty.mp3"></audio>
+        </div>
+        <div class="col-3 d-flex justify-content-center">
+          <button onclick="buyStomach()" id="stomach" type="button" class="btn btn-secondary btn-sm"><small><b>Buy
+                Another
+                Stomach</b> (At the cost of two limbs, gain an additional 20000 burgers eaten) Price doubles on
+              purchase</small></button>
+          <audio id="morecheeseburgers" src="morecheeseburgers.mp3"></audio>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
